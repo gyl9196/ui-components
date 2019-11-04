@@ -1,0 +1,13 @@
+.idea
+.vscode
+styleguide/
+node_modules
+*.log
+.DS_Store
+coverage
+.rpt2_cache
+**/package-lock.json
+**/dist/**
+.webpack
+*.orig
+.nvmrc

@@ -1,0 +1,13 @@
+{
+  "name": "yanlin",
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  },
+  "scripts": {
+    "publish": "lerna publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.0.0"
+}
