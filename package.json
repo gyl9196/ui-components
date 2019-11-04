@@ -1,5 +1,6 @@
 {
   "name": "yanlin",
+  "version": "0.0.2",
   "devDependencies": {
     "lerna": "^3.18.3"
   },
@@ -8,6 +9,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "version": "0.0.1"
+  ]
 }
