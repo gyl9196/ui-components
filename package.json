@@ -5,7 +5,7 @@
     "lerna": "^3.18.3"
   },
   "scripts": {
-    "publish": "lerna publish"
+    "publish": "lerna publish --yes --conventional-commits --registry https://registry.npmjs.org"
   },
   "workspaces": [
     "packages/*"
