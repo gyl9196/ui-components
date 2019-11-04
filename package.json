@@ -1,5 +1,6 @@
 {
   "name": "yanlin",
+  "private": true,
   "version": "0.0.2",
   "devDependencies": {
     "lerna": "^3.18.3"
