@@ -19,6 +19,7 @@
   "main": "./dist/niel.common.js",
   "dependencies": {
     "core-js": "^3.3.2",
+    "element-ui": "^2.12.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {

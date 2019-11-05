@@ -1,6 +1,7 @@
 module.exports = {
     entry: {
       banner: './src/components/Banner/index.js',
+      Elements: './src/components/Elements/index.js'
     },
     css: {
         extract: false
