@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-      banner: './src/components/Banner/Banner.vue',
+      banner: './src/components/Banner/index.js',
     },
     css: {
         extract: false
