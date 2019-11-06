@@ -2,7 +2,7 @@
   <footer class="footer">
     <span>Shroogle Pty Ltd ABN 71 629 833 432 | Level 1, 91 William Street, Melbourne VIC 3000 Australia | Credit Representative of SJM Financial Solutions Pty Ltd t/as Resicom Pty Ltd | Australian Credit Licence Number 389191</span>
     <br />
-    <span>Copyright © {new Date().getFullYear()} | All rights reserved</span>
+    <span>Copyright © {{ new Date().getFullYear() }}| All rights reserved</span>
   </footer>
 </template>
 
