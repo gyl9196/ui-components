@@ -20,7 +20,6 @@ export default {
         left: 0;
         right: 0;
         height: '40px';
-        padding: 10px;
         width: 100%;
         font-size: 10px;
         background-color: $brandColor;

@@ -1,4 +1,5 @@
 const vueLoader = require('vue-loader')
+const { resolve } = require('path');
 
 module.exports = {
 	components: 'src/components/**/*.vue',
@@ -7,6 +8,13 @@ module.exports = {
 		url: 'https://vue-styleguidist.github.io/Examples.html'
 	},
 	webpackConfig: {
+		resolve: {
+			extensions: ['.js', '.json', '.vue', '.ts'],
+			alias: {
+			  '~': resolve(__dirname, 'src'),
+			  '@': resolve(__dirname, 'src')
+			}
+		  },
 		module: {
 			rules: [
 				{
@@ -31,6 +39,7 @@ module.exports = {
 		},
 		plugins: [new vueLoader.VueLoaderPlugin()]
 	},
+	
 	usageMode: 'expand',
 	exampleMode: 'expand',
 	styleguideDir: 'dist'
