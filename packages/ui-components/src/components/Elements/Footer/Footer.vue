@@ -21,7 +21,7 @@ export default {
         bottom: 0;
         left: 0;
         right: 0;
-        height: '40px';
+        height: '60px';
         width: 100%;
         background-color: $brandColor;
         text-align: center;
