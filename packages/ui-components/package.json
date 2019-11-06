@@ -19,7 +19,6 @@
   "main": "./dist/niel.common.js",
   "dependencies": {
     "core-js": "^3.3.2",
-    "element-ui": "^2.12.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -33,6 +32,7 @@
     "node-sass": "^4.13.0",
     "poi": "^12.7.3",
     "sass-loader": "^8.0.0",
+    "tailwindcss": "^1.1.3",
     "vue-styleguidist": "^3.26.2",
     "vue-template-compiler": "^2.6.10"
   },
@@ -48,11 +48,6 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
     }
   },
   "browserslist": [

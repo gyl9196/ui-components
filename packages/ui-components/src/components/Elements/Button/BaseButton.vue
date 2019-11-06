@@ -1,6 +1,6 @@
 <template>
   <button @click="onClick">
-      <slot>{{name}}</slot>
+    <slot>{{name}}</slot>
   </button>
 </template>
 

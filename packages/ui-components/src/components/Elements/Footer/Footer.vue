@@ -1,8 +1,8 @@
 <template>
-  <footer class="footer">
-    <span class="footer-title">Shroogle Pty Ltd</span>
+  <footer class="w-full text-center border-t border-grey p-4 pin-b bg-blue-200">
+    <span class="font-bold Helvetica text-white">Shroogle Pty Ltd</span>
     <br />
-    <span class="footer-content">Shroogle Pty Ltd | Level 1, 91 Williams St Melbourne VIC 3000 | Ph 1234 5678</span>
+    <span class="Helvetica text-white">Shroogle Pty Ltd | Level 1, 91 Williams St Melbourne VIC 3000 | Ph 1234 5678</span>
   </footer>
 </template>
 
@@ -13,28 +13,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/assets/styles/variable.scss';
-    .footer {
-        font-family: Helvetica;
-        color: $whiteFontColor;
-        position: 'absolute';
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: '60px';
-        width: 100%;
-        background-color: $brandColor;
-        text-align: center;
-        line-height: 12px;
-
-        .footer-title {
-          font-size: 12px;
-          font-weight: bold;
-        }
-
-        .footer-content {
-          font-size: 10px;
-        }
-
-    }
+@import '~@/assets/styles/tailwind.css';
 </style>
