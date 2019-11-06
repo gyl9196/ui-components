@@ -20,12 +20,12 @@ export default {
         position: 'absolute';
         bottom: 0;
         left: 0;
-        right: 0;
         height: '40px';
         width: 100%;
         background-color: $brandColor;
         text-align: center;
         line-height: 12px;
+        overflow: hidden;
 
         .footer-title {
           font-size: 12px;
