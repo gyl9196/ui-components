@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Header from './Elements/Header/Header.vue'
-import Footer from './Elements/Footer/Footer.vue'
+import Header from '../Elements/Header/Header.vue'
+import Footer from '../Elements/Footer/Footer.vue'
 export default {
   name: "BasicLayout",
   components: {
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .content {
   display: flex;
   flex-direction: column;
