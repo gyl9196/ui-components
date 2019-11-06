@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/assets/styles/variables.scss';
+@import '~@/assets/styles/variable.scss';
     footer {
         position: 'absolute';
         bottom: 0;
