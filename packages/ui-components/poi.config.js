@@ -1,6 +1,5 @@
 module.exports = {
   entry: {
-    banner: './src/components/Banner/index.js',
     Elements: './src/components/Elements/index.js',
     Layouts: './src/components/Layouts/index.js'
   },
