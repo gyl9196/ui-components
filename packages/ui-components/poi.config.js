@@ -8,6 +8,7 @@ module.exports = {
   },
   output: {
     clean: true,
+    minimize: true,
     format: 'cjs',
     fileNames: {
       js: '[name].js'
