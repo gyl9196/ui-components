@@ -16,11 +16,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  data () {
-    return {
-      imgUrl: 'https://shroogle.com.au/wp-content/uploads/2019/03/Shroogle-logo-web-white-1.svg' 
-    }
   }
 }
 </script>
@@ -30,6 +25,6 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center
+   
 }
 </style>

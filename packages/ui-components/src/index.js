@@ -1,1 +1,1 @@
-export { default as Banner } from './components/Banner.vue';
+export { default as BasicLayout } from './components/Layouts/index';
