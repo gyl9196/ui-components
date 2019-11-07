@@ -1,17 +1,19 @@
 <template>
   <div id="app">
+    <Header />
     <Test />
   </div>
 </template>
 
 <script>
-
+import Header from './components/Elements/Header/Header'
 import Footer from './components/Elements/Footer/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    Test: Footer
+    Test: Footer,
+    Header
   }
 }
 </script>
