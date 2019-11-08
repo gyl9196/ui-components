@@ -16,7 +16,7 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/niel.common.js",
+  "main": "index.js",
   "dependencies": {
     "core-js": "^3.3.2",
     "element-ui": "^2.12.0",
