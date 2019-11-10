@@ -1,6 +1,10 @@
 {
-  "name": "@yanlin/vue-components",
+  "name": "@gyl9196/vue-components",
   "version": "0.0.21",
+  "repository": "https://github.com/gyl9196/ui-components.git",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name niel ./src/index.js",
