@@ -13,7 +13,3 @@ export default {
   name: "Footer"
 };
 </script>
-
-<style lang="scss" scoped>
-@import "~@/assets/styles/tailwind.css";
-</style>

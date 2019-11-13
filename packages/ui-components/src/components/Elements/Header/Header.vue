@@ -37,7 +37,3 @@ export default {
   name: "Header"
 };
 </script>
-
-<style lang="css" scoped>
-@import "~@/assets/styles/tailwind.css";
-</style>
