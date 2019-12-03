@@ -5,7 +5,8 @@
   "scripts": {
     "publishmodules": "lerna publish --yes --conventional-commits --registry https://npm.pkg.github.com/",
     "checkVersion": "lerna --version",
-    "checkChanged": "lerna changed"
+    "checkChanged": "lerna changed",
+    "test": "lerna run test --since master"
   },
   "devDependencies": {
     "lerna": "^3.18.3"

@@ -19,5 +19,8 @@ jobs:
       run: yarn install
     - name: check lerna version
       run: yarn checkVersion
-    - name: check lerna version
+    - name: check code change
+      run: yarn test
+    - name: check lerna change
       run: yarn checkChanged
+    
