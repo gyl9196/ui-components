@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "publishmodules": "lerna publish --yes --conventional-commits --registry https://npm.pkg.github.com/",
-    "checkVersion": "lerna --version"
+    "checkVersion": "lerna --version",
+    "checkChanged": "lerna changed"
   },
   "devDependencies": {
     "lerna": "^3.18.3"
