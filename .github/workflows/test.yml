@@ -22,7 +22,7 @@ jobs:
     - name: check lerna version
       run: yarn checkVersion
     - name: check code change
-      run: yarn test
+      run: git diff --name-only ${GIT_COMMIT} ${GIT_PREVIOUS_COMMIT} 
     - name: check lerna change
       run: yarn checkChanged
     
