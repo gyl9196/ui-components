@@ -10,9 +10,7 @@ jobs:
         node_version: [12]
 
     steps:
-    - uses: actions/checkout@v1
-      with:
-        ref: refs/heads/master
+    - uses: actions/checkout@master
     - name: Use Node.js ${{ matrix.node_version }}
       uses: actions/setup-node@v1
       with:
@@ -22,7 +20,7 @@ jobs:
     # - name: check lerna version
     #   run: yarn checkVersion
     - name: check code change
-      run: git diff --name-only HEAD^ HEAD packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
+      run: git diff --name-only master packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
     # - name: check lerna change
     #   run: yarn checkChanged
     
