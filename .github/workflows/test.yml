@@ -13,5 +13,5 @@ jobs:
     - uses: actions/checkout@master
     - name: check code change
       run: git diff --name-only master packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
-
-    
+    - name: show variables
+      run: echo $GITHUB_REF	
