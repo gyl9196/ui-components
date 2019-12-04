@@ -11,16 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with:
-        version: ${{ matrix.node_version }}
-    # - name: yarn install
-    #   run: yarn install
-    # - name: check lerna version
-    #   run: yarn checkVersion
     - name: check code change
       run: git diff --name-only master packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
-    # - name: check lerna change
-    #   run: yarn checkChanged
+
     
