@@ -21,7 +21,7 @@ jobs:
     #   run: yarn install
     # - name: check lerna version
     #   run: yarn checkVersion
-    # - name: check code change
+    - name: check code change
       run: git diff --name-only HEAD^ HEAD | grep / | awk 'BEGIN {FS="/"} {print $1}' | uniq
     # - name: check lerna change
     #   run: yarn checkChanged
