@@ -14,4 +14,4 @@ jobs:
     - name: check code change
       run: git diff --name-only master packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
     - name: show variables
-      run: echo $GITHUB_REF	$GITHUB_REPOSITORY $GITHUB_WORKSPACE $GITHUB_HEAD_REF $GITHUB_BASE_REF
+      run: echo $GITHUB_REF	$GITHUB_REPOSITORY $GITHUB_WORKSPACE $GITHUB_SHA $GITHUB_REF
