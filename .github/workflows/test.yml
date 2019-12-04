@@ -17,12 +17,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
-    - name: yarn install
-      run: yarn install
-    - name: check lerna version
-      run: yarn checkVersion
-    - name: check code change
-      run: git diff --name-only HEAD^ HEAD
-    - name: check lerna change
-      run: yarn checkChanged
+    # - name: yarn install
+    #   run: yarn install
+    # - name: check lerna version
+    #   run: yarn checkVersion
+    # - name: check code change
+      run: git diff --name-only HEAD^ HEAD | grep / | awk 'BEGIN {FS="/"} {print $1}' | uniq
+    # - name: check lerna change
+    #   run: yarn checkChanged
     
