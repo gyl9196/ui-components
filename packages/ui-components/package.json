@@ -16,9 +16,6 @@
   },
   "files": [
     "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
     "*.js"
   ],
   "main": "index.js",
