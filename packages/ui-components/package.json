@@ -1,6 +1,6 @@
 {
   "name": "@gyl9196/vue-components",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "repository": "https://github.com/gyl9196/ui-components.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -58,5 +58,5 @@
     "> 1%",
     "last 2 versions"
   ],
-  "gitHead": "e6a6f7b06738851a15ae482759b37f2b8677dd9a"
+  "gitHead": "406d434691e4ccf9b15607879f6836d957bf9445"
 }
