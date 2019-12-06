@@ -27,10 +27,10 @@ jobs:
 
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-    - name: install
-      run: yarn install
-    - name: checkChanged
-      run: yarn publishmodules
+    # - name: install
+    #   run: yarn install
+    # - name: checkChanged
+    #   run: yarn publishmodules
 
 
          #     git remote rm origin
