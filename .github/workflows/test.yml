@@ -24,13 +24,13 @@ jobs:
         git config --global user.email nielgong@gmail.com
         git config --global user.name gyl9196
         git clone https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git
-        git checkout master
-    #   env:
-    #     GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-    - name: install
-      run: yarn install
-    - name: checkChanged
-      run: yarn publishmodules
+        ls
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+    # - name: install
+    #   run: yarn install
+    # - name: checkChanged
+    #   run: yarn publishmodules
 
 
          #     git remote rm origin
