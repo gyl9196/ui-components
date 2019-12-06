@@ -26,3 +26,5 @@ console.log('test 8')
 ;
 console.log('test 9')
 ;
+console.log('test 9')
+;
