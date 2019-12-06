@@ -23,8 +23,8 @@ jobs:
         git config --global user.email nielgong@gmail.com
         git config --global user.name gyl9196
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
-        git pull
         git checkout master
+        git pull     
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Install dependencies
