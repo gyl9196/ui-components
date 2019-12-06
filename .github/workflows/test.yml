@@ -18,10 +18,10 @@ jobs:
         version: 12
     - name: Configure CI Git User
       run: |
-        git init
         git config --global user.email gyl91962010@gmail.com
         git config --global user.name test
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+        git pull
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Install dependencies
