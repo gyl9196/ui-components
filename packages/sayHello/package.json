@@ -1,5 +1,5 @@
 {
-  "name": "@gyl9196/sayHello",
+  "name": "@gyl9196/say-hello",
   "repository": "https://github.com/gyl9196/ui-components.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
