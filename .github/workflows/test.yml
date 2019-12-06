@@ -30,7 +30,7 @@ jobs:
         yarn install
         yarn publishmodules
       env: 
-        GH_TOKEN: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          #     git remote rm origin
     #     git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
     #     git fetch
