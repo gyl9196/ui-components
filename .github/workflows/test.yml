@@ -32,4 +32,4 @@ jobs:
     #   env:
     #     GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     - name: checkChanged
-      run: yarn checkChanged
+      run: yarn publishmodules
