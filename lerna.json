@@ -8,13 +8,6 @@
       "registry": "https://npm.pkg.github.com",
       "message": "Bump versions and publish packages. [skip ci]",
       "yes": true
-    },
-    "version": {
-      "allowBranch": "master",
-      "conventionalCommits": true,
-      "createRelease": "github",
-      "yes": true,
-      "message": "chore(release): publish [skip ci]"
     }
   },
   "npmClient": "yarn",

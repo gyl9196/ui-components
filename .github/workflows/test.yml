@@ -22,17 +22,16 @@ jobs:
       uses: actions/setup-node@master
       with:
         version: 12
-    - name: Set up NPM authentication
+    - name: checkChanged
       run: |
         cd ui-components/
         echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
         echo "registry=https://npm.pkg.github.com" >> .npmrc  
-    - name: checkChanged
-      run: |
-        cd ui-components/
         yarn install
         yarn checkChanged
         yarn publishmodules
+      env: 
+        GH_TOKEN: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
          #     git remote rm origin
     #     git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
     #     git fetch
