@@ -16,6 +16,8 @@ jobs:
         git config --global user.name gyl9196
         git clone https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git
         cd ui-components
+        ls
+        yarn install
     - name: Use Node.js 
       uses: actions/setup-node@master
       with:
@@ -29,8 +31,8 @@ jobs:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     # - name: install
     #   run: yarn install
-    # - name: checkChanged
-    #   run: yarn publishmodules
+    - name: checkChanged
+      run: ls
 
 
          #     git remote rm origin
