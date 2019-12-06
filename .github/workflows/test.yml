@@ -25,10 +25,6 @@ jobs:
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Prepare repository
-      run: git checkout master
-    - name: Pulling
-      run: git pull
     - name: Install dependencies
       run: |
         echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
