@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "publishmodules": "lerna publish --yes --conventional-commits --registry https://npm.pkg.github.com/"
+    "publishmodules": "lerna publish --yes --conventional-commits --registry https://npm.pkg.github.com/",
+    "checkChanged": "lerna updated"
   },
   "devDependencies": {
     "lerna": "^3.18.3"

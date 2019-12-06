@@ -31,5 +31,5 @@ jobs:
         git config --global user.name gyl9196
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-    - name: piublish
-      run: yarn publishmodules
+    - name: checkChanged
+      run: yarn checkChanged
