@@ -16,25 +16,22 @@ jobs:
         git config --global user.name gyl9196
         git clone https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git
         cd ui-components
-        ls
-        yarn install
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     - name: Use Node.js 
       uses: actions/setup-node@master
       with:
         version: 12
     - name: Set up NPM authentication
       run: |
+        cd ui-components/
         echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
         echo "registry=https://npm.pkg.github.com" >> .npmrc  
-
-      env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-    # - name: install
-    #   run: yarn install
     - name: checkChanged
-      run: ls
-
-
+      run: |
+        cd ui-components/
+        yarn install
+        yarn checkChanged
          #     git remote rm origin
     #     git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
     #     git fetch
