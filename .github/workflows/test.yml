@@ -27,8 +27,8 @@ jobs:
     #     git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
     #     git fetch
     #     git checkout master
-    #     git config --global user.email nielgong@gmail.com
-    #     git config --global user.name gyl9196
+        git config --global user.email nielgong@gmail.com
+        git config --global user.name gyl9196
     #   env:
     #     GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     - name: checkChanged
