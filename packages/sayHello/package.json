@@ -1,5 +1,9 @@
 {
-  "name": "@shroogle/sayHello",
+  "name": "@gyl9196/sayHello",
+  "repository": "https://github.com/gyl9196/ui-components.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
