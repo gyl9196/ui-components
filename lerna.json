@@ -2,6 +2,11 @@
   "packages": [
     "packages/*"
   ],
+  "command": {
+    "publish": {
+      "message": "Bump versions and publish packages. [skip ci]"
+    }
+  },
   "npmClient": "yarn",
   "loglevel": "info",
   "version": "independent"

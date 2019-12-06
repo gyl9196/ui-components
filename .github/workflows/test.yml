@@ -11,7 +11,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: check code change
-      run: git diff --name-only master packages/ | grep / | awk 'BEGIN {FS="/"} {print $2}' | uniq 
-    - name: show variables
-      run: echo $GITHUB_REF	$GITHUB_REPOSITORY $GITHUB_WORKSPACE $GITHUB_SHA $GITHUB_REF
+    - name: Use Node.js 
+      uses: actions/setup-node@master
+      with:
+        version: 12
+    - name: Set up NPM authentication
+      run: |
+        echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
+        echo "registry=https://npm.pkg.github.com" >> .npmrc  
+    - name: Configure CI Git User
+      run: |
+        git remote rm origin
+        git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/apollo-elements/apollo-elements.git"
+        git fetch
+        git checkout master
+        git config --global user.email nielgong@gmail.com
+        git config --global user.name gyl9196
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+    - name: piublish
+      run: yarn publishmodules

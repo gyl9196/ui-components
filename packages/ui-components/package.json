@@ -1,6 +1,6 @@
 {
   "name": "@gyl9196/vue-components",
-  "version": "0.0.26",
+  "version": "0.0.30",
   "repository": "https://github.com/gyl9196/ui-components.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
