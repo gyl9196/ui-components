@@ -10,5 +10,5 @@ console.log('test 1')
 ;
 console.log('test 1')
 ;
-const a = 1
+console.log('test w')
 ;
