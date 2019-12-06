@@ -13,12 +13,18 @@ jobs:
         node_version: [12]
 
     steps:
+    - uses: actions/checkout@master
     - name: Configure CI Git User
       run: |
         git config --global user.email nielgong@gmail.com
         git config --global user.name gyl9196
-        git clone https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git
-        cd ui-components
+        git remote -v
+        git remote rm origin
+        git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
+        git remote -v
+        git fetch
+        git checkout master
+        ls
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     - name: Use Node.js 
@@ -27,7 +33,6 @@ jobs:
         version: 12
     - name: checkChanged
       run: |
-        cd ui-components/
         echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
         echo "registry=https://npm.pkg.github.com" >> .npmrc  
         yarn install
