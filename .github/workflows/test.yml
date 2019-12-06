@@ -24,7 +24,7 @@ jobs:
     - name: Configure CI Git User
       run: |
         git remote rm origin
-        git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/apollo-elements/apollo-elements.git"
+        git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
         git fetch
         git checkout master
         git config --global user.email nielgong@gmail.com
