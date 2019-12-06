@@ -5,7 +5,6 @@
   ],
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com",
       "message": "Bump versions and publish packages. [skip ci]"
     }
   },
