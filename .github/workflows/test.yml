@@ -32,6 +32,7 @@ jobs:
         cd ui-components/
         yarn install
         yarn checkChanged
+        yarn publishmodules
          #     git remote rm origin
     #     git remote add origin "https://gyl9196:$GITHUB_PAT@github.com/gyl9196/ui-components.git"
     #     git fetch
