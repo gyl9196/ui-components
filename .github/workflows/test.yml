@@ -13,18 +13,18 @@ jobs:
         node_version: [12]
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v1
     - name: Use Node.js 
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v1
       with:
         version: 12
     - name: Configure CI Git User
       run: |
         git config --global user.email nielgong@gmail.com
         git config --global user.name gyl9196
-        # git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
-        # git checkout master
-        # git pull     
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+        git checkout master
+        git pull     
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Install dependencies
