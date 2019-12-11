@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.47 (2019-12-11)
+
+**Note:** Version bump only for package @gyl9196/vue-components
+
+
+
+
+
 ## [0.0.46](https://github.com/gyl9196/ui-components/compare/@gyl9196/vue-components@0.0.45...@gyl9196/vue-components@0.0.46) (2019-12-06)
 
 **Note:** Version bump only for package @gyl9196/vue-components
