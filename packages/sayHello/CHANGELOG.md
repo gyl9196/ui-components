@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.36](https://github.com/gyl9196/ui-components/compare/@gyl9196/say-hello@1.0.35...@gyl9196/say-hello@1.0.36) (2019-12-30)
+
+**Note:** Version bump only for package @gyl9196/say-hello
+
+
+
+
+
 ## [1.0.35](https://github.com/gyl9196/ui-components/compare/@gyl9196/say-hello@1.0.34...@gyl9196/say-hello@1.0.35) (2019-12-30)
 
 **Note:** Version bump only for package @gyl9196/say-hello
