@@ -2,15 +2,13 @@ name: CI
 on:
   push:
     branches:
+    - dev
     - master
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-18.04
-    strategy:
-      matrix:
-        node_version: [12]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js 
@@ -18,14 +16,14 @@ jobs:
       with:
         version: 12
    - name: Set env to staging
-      if: endsWith(github.ref, '/develop')
+      if: endsWith(GITHUB_REF, '/dev')
       run: |
         echo "::set-env name=ENVIRONMENT::staging"
     - name: check env for staging
       run: |
         echo $ENVIRONMENT
     - name: Set env to production
-      if: endsWith(github.ref, '/master')
+      if: endsWith(GITHUB_REF, '/master')
       run: |
         echo "::set-env name=ENVIRONMENT::production" 
     - name: check env for production
