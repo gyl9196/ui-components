@@ -16,7 +16,7 @@ jobs:
         with:
           version: 12
       - name: Set env to production
-        if: endsWith(github_ref, '/master')
+        if: endsWith(github.ref, '/master')
         run: |
           echo "::set-env name=ENVIRONMENT::production"
       - name: check env for production
