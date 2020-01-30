@@ -19,15 +19,15 @@ jobs:
         if: endsWith(github_ref, '/dev')
         run: |
           echo "::set-env name=ENVIRONMENT::staging"
-      - name: check env for staging
-        run: |
-          echo $ENVIRONMENT
-      - name: Set env to production
-        if: endsWith(github_ref, '/master')
-        run: |
-          echo "::set-env name=ENVIRONMENT::production" 
-      - name: check env for production
-        run: |
-          echo $ENVIRONMENT
+    - name: check env for staging
+      run: |
+        echo $ENVIRONMENT
+    - name: Set env to production
+      if: endsWith(github_ref, '/master')
+      run: |
+        echo "::set-env name=ENVIRONMENT::production" 
+    - name: check env for production
+      run: |
+        echo $ENVIRONMENT
 
   
