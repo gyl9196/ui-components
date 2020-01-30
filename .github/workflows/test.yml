@@ -15,19 +15,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: 12
-   - name: Set env to staging
-      if: endsWith(GITHUB_REF, '/dev')
-      run: |
-        echo "::set-env name=ENVIRONMENT::staging"
-    - name: check env for staging
-      run: |
-        echo $ENVIRONMENT
-    - name: Set env to production
-      if: endsWith(GITHUB_REF, '/master')
-      run: |
-        echo "::set-env name=ENVIRONMENT::production" 
-    - name: check env for production
-      run: |
-        echo $ENVIRONMENT
+    - name: Set env to staging
+        if: endsWith(GITHUB_REF, '/dev')
+        run: |
+          echo "::set-env name=ENVIRONMENT::staging"
+      - name: check env for staging
+        run: |
+          echo $ENVIRONMENT
+      - name: Set env to production
+        if: endsWith(GITHUB_REF, '/master')
+        run: |
+          echo "::set-env name=ENVIRONMENT::production" 
+      - name: check env for production
+        run: |
+          echo $ENVIRONMENT
 
   
