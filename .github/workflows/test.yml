@@ -18,20 +18,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: 12
-    - name: Configure CI Git User
+   - name: Set env to staging
+      if: endsWith(github.ref, '/develop')
       run: |
-        git config --global user.email nielgong@gmail.com
-        git config --global user.name gyl9196
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
-        git checkout master
-        git pull     
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Install dependencies
+        echo "::set-env name=ENVIRONMENT::staging"
+    - name: check env for staging
       run: |
-        echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_PERSONAL_TOKEN }}" >> .npmrc
-        echo "registry=https://npm.pkg.github.com" >> .npmrc 
-        yarn --frozen-lockfile
-        yarn publishmodules
-      env: 
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        echo $ENVIRONMENT
+    - name: Set env to production
+      if: endsWith(github.ref, '/master')
+      run: |
+        echo "::set-env name=ENVIRONMENT::production" 
+    - name: check env for production
+      run: |
+        echo $ENVIRONMENT
+
+  
